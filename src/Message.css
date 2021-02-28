@@ -1,0 +1,36 @@
+.message{
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+}
+.message_user{
+    margin-left: auto;
+    color:grey; 
+    text-align: left !important;
+}
+.message_userCard{
+    /* background-color: #1877F2; */
+    /* background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+background-image: radial-gradient(circle at 50% -20.71%, #98e7ff 0, #3cb5f2 50%, #0085ce 100%);
+
+    
+}
+.message_guestCard{
+    /* background-color: #d3ccccf1; */
+    /* background: rgb(2,0,36); */
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%); 
+background-image: radial-gradient(circle at 50% -20.71%, #ceffff 0, #c5ffff 16.67%, #bdffff 33.33%, #b5f2f2 50%, #aedbde 66.67%, #a7c6ca 83.33%, #a1b4b8 100%);
+}
+
+/* firebase Cloud cmmnd
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if
+          request.time < timestamp.date(2021, 3, 26);
+    }
+  }background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
+} */
